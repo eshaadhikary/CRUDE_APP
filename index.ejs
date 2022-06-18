@@ -1,0 +1,54 @@
+<!-- include headee -->
+%-include('include/_header')%>
+<!-- /include header -->
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient">New User</span>
+                <i class="fa-solid fa-user"></i>
+                
+
+            </a>
+        </div>
+       <!-- Form Handling -->
+       <form action="/" method="POST">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <!-- <th>College_ID</th> -->
+                    <th>College_Mail</th>
+                    <!-- <th>Personal_Mail</th> -->
+                    <th>Phone Number</th>
+                    <th>Department Name</th>
+                    <!-- <th>Year</th> -->
+                    <th>Roll_no</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%-include('include/_show')%>
+            </tbody>
+        </table>
+       </form>
+
+
+
+
+
+
+
+
+
+    </div>
+</main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+%-include('include/_footer')%>
+<!-- /include footer -->
